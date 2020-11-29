@@ -23,7 +23,7 @@ echo "lssssssssssssssssssssss"
 ls
 echo "lszzzzzzzzzzzzzzzzzzzzzzz"
 	$(CP) bkyrockchip.dtb $@.boot/rockchip.dtb
-	$(CP) opt $@.boot/opt
+	$(CP) opt.zip $@.boot/opt.zip
 	$(CP) $(IMAGE_KERNEL) $@.boot/kernel.img
 endef
 
