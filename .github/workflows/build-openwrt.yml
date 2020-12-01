@@ -269,10 +269,10 @@ jobs:
               发布地址：${{ env.GITHUB_RELEASE }}
               
               
-              奶牛快传：${{ COWTRANSFER_URL }}              
+              奶牛快传：${{ env.COWTRANSFER_URL }}              
             
 
-              WeTransfer：${{ WETRANSFER_URL }}              
+              WeTransfer：${{ env.WETRANSFER_URL }}              
               
 
               祝小主人见人爱，花见花开，车见车载，天天好心情🎈！！！
