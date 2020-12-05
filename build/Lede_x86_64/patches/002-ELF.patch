@@ -1,0 +1,15 @@
+diff --git a/target/linux/x86/config-5.4 b/target/linux/x86/config-5.4
+index 9428d314c..8aba4f5af 100644
+--- a/target/linux/x86/config-5.4
++++ b/target/linux/x86/config-5.4
+@@ -600,3 +600,9 @@ CONFIG_DRM_I915_USERFAULT_AUTOSUSPEND=250
+ # CONFIG_DRM_I915_DEBUG_MMIO is not set
+ # CONFIG_DRM_I915_DEBUG_RUNTIME_PM is not set
+ # CONFIG_VIRTIO_PMEM is not set
++CONFIG_BINFMT_ELF=y
++CONFIG_ELFCORE=y
++# CONFIG_CORE_DUMP_DEFAULT_ELF_HEADERS is not set
++CONFIG_BINFMT_SCRIPT=y
++CONFIG_BINFMT_MISC=y
++CONFIG_COREDUMP=y
+\ No newline at end of file
