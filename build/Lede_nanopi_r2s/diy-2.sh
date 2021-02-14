@@ -18,7 +18,7 @@ sed -i "s/OpenWrt /UNN build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
 sed -i '2 d' feeds/packages/utils/docker-ce/files/etc/docker/daemon.json
-sed -i '2i\"data-root\": \"/opt/docker/\",' feeds/packages/utils/docker-ce/files/etc/docker/daemon.json
+sed -i '2i\"data-root\": \"/mnt/mmcblk0p3/docker/\",' feeds/packages/utils/docker-ce/files/etc/docker/daemon.json
 
 # 修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
 #sed -i 's/"BaiduPCS Web"/"百度网盘"/g' package/lean/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
